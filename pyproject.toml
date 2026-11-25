@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srt-reels-formatter"
+version = "1.0.0"
+description = "Short-form 9:16 SRT subtitle parser, micro-gap flicker smoother, and Reels/TikTok safe-zone density validator."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Tarik", email = "tarikra1@users.noreply.github.com" }
+]
+keywords = ["srt", "subtitles", "captions", "reels", "shorts", "premiere-pro", "video-editing"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tarikra1/srt-reels-formatter"
+Repository = "https://github.com/tarikra1/srt-reels-formatter"
+Changelog = "https://github.com/tarikra1/srt-reels-formatter/blob/main/CHANGELOG.md"
+Issues = "https://github.com/tarikra1/srt-reels-formatter/issues"
+
+[project.scripts]
+srt-reels = "srt_reels_formatter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
